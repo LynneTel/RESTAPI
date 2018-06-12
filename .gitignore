@@ -1,0 +1,19 @@
+# IntelliJ
+.idea/
+out/
+
+# Python virtual environment
+venv/
+
+# log files
+*.log
+
+# pyc files
+*.pyc
+
+# version number file
+version.txt
+
+#SSH Stuff
+RESTAPI_rsa.
+RESTAPI_rsa.pub
