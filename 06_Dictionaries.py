@@ -1,22 +1,22 @@
 my_dict = {
-    'name': 'Jose',
-    'location': 'UK'
+    'name'    :'Jose',
+    'location':'UK'
 }
 
 lottery_player = {
-    'name': 'Rolf',
-    'numbers': (13, 22, 3, 6, 9)
+    'name'   :'Rolf',
+    'numbers':(13, 22, 3, 6, 9)
 }
 
 dict_in_dict = {
-    'universities': [
+    'universities':[
         {
-            'name': 'Oxford',
-            'location': 'UK'
+            'name'    :'Oxford',
+            'location':'UK'
         },
         {
-            'name': 'Harvard',
-            'location': 'US'
+            'name'    :'Harvard',
+            'location':'US'
         }
     ]
 }
@@ -24,28 +24,32 @@ dict_in_dict = {
 ##
 
 lottery_player = {
-    'name': 'Rolf',
-    'numbers': (13, 22, 3, 6, 9)
+    'name'   :'Rolf',
+    'numbers':(13, 22, 3, 6, 9)
 }
 
 players = [
     {
-        'name': 'Rolf',
-        'numbers': (13, 22, 3, 6, 9)
+        'name'   :'Rolf',
+        'numbers':(13, 22, 3, 6, 9)
     },
     {
-        'name': 'John',
-        'numbers': (22, 3, 5, 7, 9)
+        'name'   :'John',
+        'numbers':(22, 3, 5, 7, 9)
+    },
+    {
+        'name'   :'Lynne',
+        'numbers':(25, 27, 9, 6, 19)
     }
 ]
 
 # How could we select one of these?
 
 player = players[0]
-
+print(player)
 # How could we add all the numbers of a player?
 
-sum(player['numbers'])
+print(sum(player['numbers']))
 
 # We have a method that takes in a list—it does not have to be a list of numbers
 # of a player. Indeed, we could do something like this:
@@ -64,4 +68,3 @@ player.total()
 # In addition, because what we are interested in is the sum of the players' numbers,
 # it makes sense for the player itself to tell us that, and not some other method
 # that is not a part of the player.
-
