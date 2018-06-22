@@ -56,7 +56,7 @@ class Item(Resource):
         # Once again, print something not in the args to verify everything works
         item = next(filter(lambda x:x['name'] == name, items), None)
         if item is None:
-            item = {'name':name, 'price':data['price']}
+            item = {'name':name, 'price':data['price'], 'poids':data['poids']}
             items.append(item)
         else:
             item.update(data)
@@ -77,4 +77,4 @@ api.add_resource(ItemList, '/items')
 #     app.run(debug=True)  # important to mention debug=True
 
 
-app.run(port=5000, debug=True)  # important to mention debug=True
+app.run(host='0.0.0.0', port=5099, debug=True)  # important to mention debug=True

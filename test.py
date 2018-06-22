@@ -1,4 +1,5 @@
 import sqlite3
+import User
 
 connection = sqlite3.connect('data.db')
 cursor = connection.cursor()
@@ -20,6 +21,8 @@ cursor = connection.cursor()
 # insert_query = "INSERT INTO users VALUES (?,?,?)"
 # cursor.executemany(insert_query, users)
 # connection.commit()
+
+mariah = User(4,'mariah','carey')
 
 select_query = "SELECT * FROM users"
 
